@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13206723&assignment_repo_type=AssignmentRepo)
 # Detecting Cycles in Graphs
 
 Kruskal's Algorithm adds edges to the minimum spanning tree, unless they would
@@ -14,3 +15,7 @@ exercises.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The runtime analysis would be $\Theta$(|V|*|E|) because the function hasCycle runs through every node in the graph
+and checks all edges attached to the node, and when it moves to a new node in the graph it can end up traversing a 
+previously visited edge.
