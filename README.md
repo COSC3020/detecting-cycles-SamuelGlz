@@ -15,3 +15,7 @@ exercises.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The runtime analysis would be $\Theta$(|V|*|E|) because the function hasCycle runs through every node in the graph
+and checks all edges attached to the node, and when it moves to a new node in the graph it can end up traversing a 
+previously visited edge.
